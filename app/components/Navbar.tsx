@@ -1,38 +1,141 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import Image from "next/image";
+import { useState } from "react";
+import styles from "./Navbar.module.css";
 
-const links = [
-  ['About Us', '#about'],
-  ['Our Products', '#products'],
-  ['Corporate Gifting', '#corporate'],
-  ['Custom Hampers', '#custom'],
-  ['Contact', '#contact'],
-];
+const PHONE_NUMBER = "+91 98765 43210";
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const handlePhoneClick = async () => {
+    // Mobile / tablet → open phone app
+    if (window.innerWidth <= 768) {
+      window.location.href = `tel:${PHONE_NUMBER.replace(/\s/g, "")}`;
+      return;
+    }
+
+    // Desktop → copy phone number
+    try {
+      await navigator.clipboard.writeText(PHONE_NUMBER);
+    } catch {
+      // Fallback
+      const input = document.createElement("input");
+
+      input.value = PHONE_NUMBER;
+
+      document.body.appendChild(input);
+
+      input.select();
+      input.setSelectionRange(0, 99999);
+
+      document.execCommand("copy");
+
+      document.body.removeChild(input);
+    }
+
+    setCopied(true);
+
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
 
   return (
-    <header className="site-header">
-      <nav className="navbar container" aria-label="Primary navigation">
-        <a className="brand" href="#top" aria-label="Wrap & Wow home">
-          <span className="brand-mark" aria-hidden="true">W</span>
-          <span className="brand-name">WRAP &amp; WOW</span>
-        </a>
+    <>
+      <header className={styles.navbar}>
+        <div className={styles.navInner}>
+          {/* ================================
+              LEFT NAVIGATION
+          ================================= */}
 
-        <div className={`nav-links ${open ? 'is-open' : ''}`}>
-          {links.map(([label, href]) => (
-            <a key={href} href={href} onClick={() => setOpen(false)}>{label}</a>
-          ))}
-          <a className="nav-cta mobile-cta" href="#contact" onClick={() => setOpen(false)}>Get in Touch <span>↗</span></a>
+          <nav
+            className={`${styles.leftNav} ${menuOpen ? styles.mobileOpen : ""}`}
+          >
+            <a href="#about" onClick={closeMenu}>
+              About
+            </a>
+
+            <a href="#products" onClick={closeMenu}>
+              Products
+            </a>
+
+            <a href="#contact" onClick={closeMenu}>
+              Contact
+            </a>
+          </nav>
+
+          {/* ================================
+              CENTER LOGO
+          ================================= */}
+
+          <a href="/" className={styles.logo}>
+            <Image
+              src="/logoone.png"
+              alt="Wrap & Wow logo"
+              width={120}
+              height={120}
+              priority
+              className={styles.logoImage}
+            />
+
+            <span className={styles.logoText}>
+              WRAP <b>&amp;</b> WOW
+            </span>
+          </a>
+
+          {/* ================================
+              RIGHT PHONE
+          ================================= */}
+
+          <button
+            type="button"
+            className={styles.phone}
+            onClick={handlePhoneClick}
+            aria-label={`Call ${PHONE_NUMBER}`}
+          >
+            <span className={styles.phoneIcon}>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6.6 3.5l3.1-.7c.5-.1 1 .2 1.2.7l1.2 3c.2.4.1.9-.3 1.2l-1.8 1.5c.9 1.9 2.4 3.5 4.3 4.3l1.5-1.8c.3-.4.8-.5 1.2-.3l3 1.2c.5.2.8.7.7 1.2l-.7 3.1c-.1.5-.6.9-1.1.9C10.5 17.8 6.2 13.5 5.7 7.1c0-.5.4-1 0.9-1.1z" />
+              </svg>
+            </span>
+
+            <span className={styles.phoneText}>
+              <span className={styles.callUs}>Call Us</span>
+
+              <span className={styles.number}>{PHONE_NUMBER}</span>
+            </span>
+          </button>
+
+          {/* ================================
+              MOBILE MENU BUTTON
+          ================================= */}
+
+          <button
+            type="button"
+            className={styles.menuButton}
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle navigation menu"
+            aria-expanded={menuOpen}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
+      </header>
 
-        <a className="nav-cta desktop-cta" href="#contact">Get in Touch <span>↗</span></a>
-        <button className="menu-button" onClick={() => setOpen(!open)} aria-label="Toggle menu" aria-expanded={open}>
-          <span /><span /><span />
-        </button>
-      </nav>
-    </header>
+      {/* ================================
+          DESKTOP COPY MESSAGE
+      ================================= */}
+
+      {copied && <div className={styles.copyMessage}>Phone number copied!</div>}
+    </>
   );
 }

@@ -96,13 +96,13 @@ export default function Footer() {
             <span className={styles.xIcon}>𝕏</span>
           </a>
 
-          <a href="#" aria-label="TikTok" className={styles.social}>
+          {/* <a href="#" aria-label="TikTok" className={styles.social}>
             <span className={styles.tiktok}>♪</span>
           </a>
 
           <a href="#" aria-label="Facebook" className={styles.social}>
             <span className={styles.facebook}>f</span>
-          </a>
+          </a> */}
         </div>
       </div>
 

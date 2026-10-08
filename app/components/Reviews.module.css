@@ -1,0 +1,208 @@
+.reviews {
+  width: 100%;
+  padding: 110px 8% 120px;
+  background: #f8f3e9;
+  overflow: hidden;
+}
+
+/* ---------------- HEADER ---------------- */
+
+.header {
+  max-width: 720px;
+  margin: 0 auto 58px;
+  text-align: center;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 14px;
+
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #a8792d;
+}
+
+.header h2 {
+  margin: 0;
+
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: clamp(48px, 5vw, 72px);
+  line-height: 0.95;
+  font-weight: 500;
+  color: #321914;
+}
+
+.header p {
+  max-width: 560px;
+  margin: 24px auto 0;
+
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #6a5148;
+}
+
+/* ---------------- GRID ---------------- */
+
+.grid {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+/* ---------------- CARD ---------------- */
+
+.card {
+  min-height: 190px;
+  padding: 34px 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: #fffdf9;
+  border: 1px solid rgba(168, 121, 45, 0.08);
+  border-radius: 20px;
+
+  box-shadow:
+    0 8px 25px rgba(50, 25, 20, 0.06),
+    0 2px 8px rgba(50, 25, 20, 0.03);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-7px) rotate(0deg);
+  box-shadow:
+    0 18px 40px rgba(50, 25, 20, 0.1),
+    0 4px 12px rgba(50, 25, 20, 0.04);
+}
+
+/* Slight handmade / editorial rotation */
+
+.cardUp {
+  transform: rotate(-0.7deg);
+}
+
+.cardDown {
+  transform: rotate(0.7deg);
+}
+
+/* ---------------- REVIEW TEXT ---------------- */
+
+.reviewText {
+  margin: 0;
+
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: 22px;
+  line-height: 1.45;
+  font-weight: 500;
+  color: #321914;
+}
+
+/* ---------------- AUTHOR ---------------- */
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 28px;
+
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  color: #a8792d;
+}
+
+.line {
+  width: 22px;
+  height: 1px;
+  background: #a8792d;
+}
+
+/* ---------------- TABLET ---------------- */
+
+@media (max-width: 900px) {
+  .reviews {
+    padding: 85px 5% 90px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+
+  .card {
+    min-height: 200px;
+  }
+
+  .reviewText {
+    font-size: 21px;
+  }
+
+  .cardUp,
+  .cardDown {
+    transform: none;
+  }
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media (max-width: 600px) {
+  .reviews {
+    padding: 70px 20px 80px;
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .eyebrow {
+    font-size: 9px;
+    letter-spacing: 2.2px;
+  }
+
+  .header h2 {
+    font-size: 48px;
+  }
+
+  .header p {
+    margin-top: 18px;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .card {
+    min-height: 170px;
+    padding: 28px 24px;
+    border-radius: 16px;
+  }
+
+  .reviewText {
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .author {
+    margin-top: 22px;
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+}

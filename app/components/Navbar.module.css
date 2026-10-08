@@ -1,0 +1,611 @@
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar {
+  position: fixed;
+  z-index: 1000;
+
+  width: 100%;
+
+  background: #f8f3e9;
+
+  border-bottom: 1px solid rgba(50, 25, 20, 0.08);
+}
+
+/* ========================================
+   MAIN NAV CONTAINER
+======================================== */
+
+.navInner {
+  width: min(1400px, 100%);
+
+  min-height: 92px;
+
+  margin: 0 auto;
+
+  padding: 0 55px;
+
+  display: grid;
+
+  /*
+    3 columns:
+
+    LEFT       CENTER       RIGHT
+    1fr        auto         1fr
+  */
+
+  grid-template-columns: 1fr auto 1fr;
+
+  align-items: center;
+}
+
+/* ========================================
+   LEFT NAVIGATION
+======================================== */
+
+.leftNav {
+  grid-column: 1;
+  grid-row: 1;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 42px;
+}
+
+.leftNav a {
+  position: relative;
+
+  font-family: var(--font-montserrat), Arial, sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+
+  color: #321914;
+
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+/* Underline */
+
+.leftNav a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -7px;
+
+  width: 0;
+
+  height: 1px;
+
+  background: #a8792d;
+
+  transition: width 0.3s ease;
+}
+
+/* Hover */
+
+.leftNav a:hover {
+  color: #a8792d;
+}
+
+.leftNav a:hover::after {
+  width: 100%;
+}
+
+/* ========================================
+   CENTER LOGO
+======================================== */
+
+.logo {
+  grid-column: 2;
+  grid-row: 1;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+}
+
+/* Logo image */
+
+.logoImage {
+  display: block;
+
+  width: 80px;
+
+  height: 80px;
+
+  object-fit: contain;
+  image-rendering: auto;
+}
+
+/* Logo text */
+
+.logoText {
+  font-family: var(--font-cormorant), Georgia, serif;
+
+  font-size: 30px;
+
+  line-height: 1;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  color: #321914;
+}
+
+/* Ampersand */
+
+.logoText b {
+  color: #a8792d;
+
+  font-weight: 500;
+}
+
+/* ========================================
+   RIGHT PHONE SECTION
+======================================== */
+
+.phone {
+  grid-column: 3;
+  grid-row: 1;
+
+  justify-self: end;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #321914;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  transition: transform 0.3s ease;
+}
+
+/* Phone hover */
+
+.phone:hover {
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   PHONE ICON CIRCLE
+======================================== */
+
+.phoneIcon {
+  width: 40px;
+
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #321914;
+
+  color: #ffffff;
+}
+
+/* Phone SVG */
+
+.phoneIcon svg {
+  width: 19px;
+
+  height: 19px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.6;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+}
+
+/* ========================================
+   PHONE TEXT
+======================================== */
+
+.phoneText {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+/* CALL US */
+
+.callUs {
+  font-family: var(--font-montserrat), Arial, sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: #a8792d;
+}
+
+/* PHONE NUMBER */
+
+.number {
+  font-family: var(--font-montserrat), Arial, sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.3px;
+
+  color: #321914;
+}
+
+/* ========================================
+   MOBILE MENU BUTTON
+======================================== */
+
+.menuButton {
+  display: none;
+
+  width: 48px;
+
+  height: 48px;
+
+  padding: 8px;
+
+  border: 0;
+
+  background: transparent;
+
+  cursor: pointer;
+}
+
+/* Hamburger lines */
+
+.menuButton span {
+  display: block;
+
+  width: 22px;
+
+  height: 1px;
+
+  margin: 5px auto;
+
+  background: #321914;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+/* ========================================
+   COPY NOTIFICATION
+======================================== */
+
+.copyMessage {
+  position: fixed;
+
+  left: 50%;
+
+  bottom: 30px;
+
+  z-index: 9999;
+
+  transform: translateX(-50%);
+
+  padding: 12px 22px;
+
+  border-radius: 30px;
+
+  background: #321914;
+
+  color: #ffffff;
+
+  font-family: var(--font-montserrat), Arial, sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.2px;
+
+  box-shadow: 0 10px 30px rgba(50, 25, 20, 0.2);
+
+  animation: copyFade 2s ease forwards;
+}
+
+/* Copy animation */
+
+@keyframes copyFade {
+  0% {
+    opacity: 0;
+
+    transform: translate(-50%, 10px);
+  }
+
+  15% {
+    opacity: 1;
+
+    transform: translate(-50%, 0);
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+
+    transform: translate(-50%, 0);
+  }
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+  .navInner {
+    min-height: 85px;
+
+    padding: 0 30px;
+  }
+
+  .leftNav {
+    gap: 25px;
+  }
+
+  .leftNav a {
+    font-size: 10px;
+
+    letter-spacing: 1.2px;
+  }
+
+  .logoImage {
+    width: 38px;
+
+    height: 38px;
+  }
+
+  .logoText {
+    font-size: 27px;
+  }
+
+  .phoneIcon {
+    width: 37px;
+
+    height: 37px;
+  }
+
+  .number {
+    font-size: 10px;
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+  .navInner {
+    position: relative;
+
+    min-height: 76px;
+
+    padding: 0 18px;
+
+    display: grid;
+
+    grid-template-columns: 45px 1fr 45px;
+
+    align-items: center;
+  }
+
+  /* ----------------------------------------
+     MOBILE LEFT MENU
+  ---------------------------------------- */
+
+  .leftNav {
+    position: absolute;
+
+    top: 100%;
+
+    left: 0;
+
+    right: 0;
+
+    display: none;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 0;
+
+    padding: 12px 20px 20px;
+
+    background: #f8f3e9;
+
+    border-top: 1px solid rgba(50, 25, 20, 0.06);
+
+    border-bottom: 1px solid rgba(50, 25, 20, 0.08);
+
+    box-shadow: 0 15px 30px rgba(50, 25, 20, 0.06);
+  }
+
+  /* Open menu */
+
+  .leftNav.mobileOpen {
+    display: flex;
+  }
+
+  /* Mobile links */
+
+  .leftNav a {
+    width: 100%;
+
+    padding: 15px 5px;
+
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .leftNav a::after {
+    display: none;
+  }
+
+  /* ----------------------------------------
+     MOBILE LOGO
+  ---------------------------------------- */
+
+  .logo {
+    grid-column: 2;
+
+    grid-row: 1;
+
+    justify-self: center;
+
+    gap: 6px;
+  }
+
+  .logoImage {
+    width: 40px;
+
+    height: 40px;
+  }
+
+  .logoText {
+    font-size: 22px;
+
+    letter-spacing: 0.5px;
+  }
+
+  /* ----------------------------------------
+     MOBILE PHONE
+  ---------------------------------------- */
+
+  .phone {
+    grid-column: 3;
+
+    grid-row: 1;
+
+    justify-self: end;
+  }
+
+  /* Hide text on mobile */
+
+  .phoneText {
+    display: none;
+  }
+
+  /* Phone circle */
+
+  .phoneIcon {
+    width: 38px;
+
+    height: 38px;
+  }
+
+  .phoneIcon svg {
+    width: 18px;
+
+    height: 18px;
+  }
+
+  /* ----------------------------------------
+     MOBILE MENU BUTTON
+  ---------------------------------------- */
+
+  .menuButton {
+    grid-column: 1;
+
+    grid-row: 1;
+
+    display: block;
+
+    justify-self: start;
+  }
+}
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 400px) {
+  .navInner {
+    padding: 0 14px;
+
+    grid-template-columns: 40px 1fr 40px;
+  }
+
+  .logo {
+    gap: 5px;
+  }
+
+  .logoImage {
+    width: 48px;
+
+    height: 48px;
+  }
+
+  .logoText {
+    font-size: 22px;
+  }
+
+  .phoneIcon {
+    width: 35px;
+
+    height: 35px;
+  }
+
+  .phoneIcon svg {
+    width: 17px;
+
+    height: 17px;
+  }
+}

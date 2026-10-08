@@ -1,7 +1,7 @@
 .luxeSection {
   width: 100%;
   padding: 40px 0;
-  background: #ffffff;
+  background: #fff9f1;
 }
 
 .container {
@@ -42,7 +42,7 @@
 .content h2 {
   margin: 0 0 12px;
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-cormorant), Georgia, serif;
   font-size: clamp(42px, 4vw, 56px);
   font-weight: 400;
   line-height: 1.05;
@@ -53,7 +53,7 @@
 .eyebrow {
   margin-bottom: 24px;
 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat), Arial, sans-serif;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 7px;
@@ -66,7 +66,7 @@
   max-width: 520px;
   margin: 0 auto 38px;
 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat), Arial, sans-serif;
   font-size: 17px;
   line-height: 1.8;
 
@@ -88,7 +88,7 @@
   background: transparent;
   color: #111111;
 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat), Arial, sans-serif;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.5px;
