@@ -1,0 +1,366 @@
+.footer {
+  width: 100%;
+  background: #f8f3e9;
+  color: #321914;
+  overflow: hidden;
+}
+
+/* =========================
+   TOP AREA
+========================= */
+
+.footerTop {
+  width: min(1200px, calc(100% - 80px));
+  margin: 0 auto;
+
+  min-height: 150px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding-top: 58px;
+}
+
+/* Message */
+.footerMessage {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  color: #4b342e;
+
+  cursor: pointer;
+  text-align: left;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.contactItem:hover {
+  color: #a8792d;
+  transform: translateX(3px);
+}
+
+.contactIcon {
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #a8792d;
+}
+
+.contactIcon svg {
+  width: 25px;
+  height: 25px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Copy notification */
+
+.copyMessage {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+
+  z-index: 9999;
+
+  transform: translateX(-50%);
+
+  padding: 12px 20px;
+
+  border-radius: 30px;
+
+  background: #321914;
+  color: #ffffff;
+
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+
+  animation: copyFade 2s ease forwards;
+}
+
+@keyframes copyFade {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+
+  15% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.socials {
+  display: flex;
+  gap: 12px;
+}
+
+.social {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  background: #321914;
+  color: #f8f3e9;
+
+  text-decoration: none;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.social:hover {
+  background: #a8792d;
+  color: #ffffff;
+
+  transform: translateY(-3px);
+}
+
+.social svg {
+  width: 19px;
+  height: 19px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
+
+.xIcon {
+  font-size: 19px;
+  line-height: 1;
+}
+
+.tiktok {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.facebook {
+  font-family: Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+/* =========================
+   LARGE BRAND
+========================= */
+
+.brandWrapper {
+  width: 100%;
+
+  padding-top: 10px;
+
+  display: flex;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.brand {
+  margin: 0;
+
+  white-space: nowrap;
+
+  font-family: var(--font-cormorant), Georgia, serif;
+
+  font-size: clamp(120px, 20vw, 220px);
+
+  font-weight: 500;
+
+  line-height: 0.65;
+
+  letter-spacing: -8px;
+
+  color: #321914;
+
+  user-select: none;
+}
+
+.brand span {
+  color: #a8792d;
+  font-weight: 400;
+}
+
+/* =========================
+   BOTTOM BAR
+========================= */
+
+.bottomBar {
+  width: 100%;
+
+  min-height: 46px;
+
+  padding: 0 6%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #321914;
+
+  color: #ffffff;
+}
+
+.bottomBar p {
+  margin: 0;
+
+  font-family: var(--font-montserrat), Arial, sans-serif;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.legalLinks {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.legalLinks a {
+  font-family: var(--font-montserrat), Arial, sans-serif;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.legalLinks a:hover {
+  color: #d4ae69;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .footerTop {
+    width: calc(100% - 48px);
+
+    padding-top: 45px;
+
+    min-height: 140px;
+  }
+
+  .brand {
+    font-size: 20vw;
+    letter-spacing: -5px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .footerTop {
+    width: calc(100% - 32px);
+
+    min-height: auto;
+
+    padding-top: 40px;
+
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .footerMessage p {
+    font-size: 13px;
+  }
+
+  .socials {
+    gap: 8px;
+  }
+
+  .social {
+    width: 36px;
+    height: 36px;
+  }
+
+  .social svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .brandWrapper {
+    padding-top: 65px;
+  }
+
+  .brand {
+    font-size: 16vw;
+    letter-spacing: -3px;
+  }
+
+  .bottomBar {
+    min-height: 70px;
+
+    padding: 14px 20px;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 10px;
+  }
+
+  .legalLinks {
+    gap: 18px;
+  }
+
+  .bottomBar p,
+  .legalLinks a {
+    font-size: 10px;
+  }
+}

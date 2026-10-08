@@ -1,0 +1,34 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1366 / 490;
+  overflow: hidden;
+  background: #f7eee6;
+}
+
+.bannerImage {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Desktop */
+@media (min-width: 1400px) {
+  .banner {
+    aspect-ratio: 1366 / 490;
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .banner {
+    aspect-ratio: 16 / 7;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .banner {
+    aspect-ratio: 4 / 3;
+  }
+}
