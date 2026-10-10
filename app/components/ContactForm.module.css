@@ -28,12 +28,10 @@
 
 .header h1 {
   margin: 0;
-  color: #321914;
   font-family: var(--font-cormorant), Georgia, serif;
   font-size: clamp(58px, 8vw, 88px);
   font-weight: 600;
   line-height: 1;
-  letter-spacing: -1px;
 }
 
 .header > p {
@@ -57,6 +55,7 @@
 }
 
 .intro {
+  min-width: 0;
   padding-top: 8px;
 }
 
@@ -81,21 +80,79 @@
   line-height: 1.2;
 }
 
-.intro p {
-  margin: 0 0 24px;
+.intro > p {
+  margin: 0;
   color: #796b60;
   font-family: var(--font-montserrat), Arial, sans-serif;
   font-size: 12px;
   line-height: 1.9;
 }
 
-.intro a {
+.contactLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #321914;
+  text-align: left;
+  cursor: pointer;
+}
+
+.contactIcon {
+  display: flex;
+  flex: 0 0 44px;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(50, 25, 20, 0.13);
+  border-radius: 50%;
   color: #a8792d;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.contactIcon svg {
+  width: 19px;
+  height: 19px;
+}
+
+.contactLink:hover .contactIcon {
+  background: #321914;
+  color: #fff;
+}
+
+.contactText {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.contactLabel {
+  color: #796b60;
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.contactValue {
+  overflow-wrap: anywhere;
+  color: #321914;
   font-family: var(--font-montserrat), Arial, sans-serif;
   font-size: 12px;
   font-weight: 600;
-  text-decoration: none;
-  overflow-wrap: anywhere;
 }
 
 .form {
@@ -127,6 +184,7 @@
 
 .field input,
 .field textarea {
+  box-sizing: border-box;
   width: 100%;
   min-width: 0;
   padding: 15px 16px;
@@ -139,8 +197,7 @@
   font-size: 12px;
   transition:
     border-color 0.25s ease,
-    box-shadow 0.25s ease,
-    background 0.25s ease;
+    box-shadow 0.25s ease;
 }
 
 .field input {
@@ -172,14 +229,13 @@
   border: 1px solid #321914;
   border-radius: 30px;
   background: #321914;
-  color: #ffffff;
+  color: #fff;
   font-family: var(--font-montserrat), Arial, sans-serif;
   font-size: 12px;
   font-weight: 600;
   cursor: pointer;
   transition:
     background 0.25s ease,
-    color 0.25s ease,
     transform 0.25s ease;
 }
 
@@ -210,12 +266,10 @@
   color: #a32626;
 }
 
-.privacyNote {
-  margin: -8px 0 0;
-  color: #796b60;
-  font-family: var(--font-montserrat), Arial, sans-serif;
-  font-size: 10px;
-  line-height: 1.7;
+.contactLink:focus-visible,
+.submitButton:focus-visible {
+  outline: 3px solid #a8792d;
+  outline-offset: 4px;
 }
 
 @media (max-width: 800px) {

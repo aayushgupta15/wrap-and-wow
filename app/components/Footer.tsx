@@ -40,7 +40,7 @@ export default function Footer() {
           <button
             type="button"
             className={styles.contactItem}
-            onClick={() => handleContactClick("phone", "+91 88102 49661")}
+            onClick={() => handleContactClick("phone", "+918810249661")}
           >
             <span className={styles.contactIcon}>
               <svg viewBox="0 0 24 24">
@@ -55,7 +55,9 @@ export default function Footer() {
           <button
             type="button"
             className={styles.contactItem}
-            onClick={() => handleContactClick("email", "hello@wrapandwow.com")}
+            onClick={() =>
+              handleContactClick("email", "wrapnwow2026@gmail.com")
+            }
           >
             <span className={styles.contactIcon}>
               <svg viewBox="0 0 24 24">
@@ -64,7 +66,7 @@ export default function Footer() {
               </svg>
             </span>
 
-            <span>hello@wrapandwow.com</span>
+            <span>wrapnwow2026@gmail.com</span>
           </button>
         </div>
         {/* Social Icons */}

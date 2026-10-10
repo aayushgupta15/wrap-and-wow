@@ -114,7 +114,7 @@ export default function FAQs() {
         <div className={styles.bottomNote}>
           <p>Still have a question?</p>
           <a
-            href="https://wa.me/919876543210?text=Hello%20Wrap%20%26%20Wow!%20I%20have%20a%20question%20about%20your%20gifting%20services."
+            href="https://wa.me/918810249661?text=Hello%20Wrap%20%26%20Wow!%20I%20have%20a%20question%20about%20your%20gifting%20services."
             target="_blank"
             rel="noopener noreferrer"
           >

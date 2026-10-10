@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import styles from "./Navbar.module.css";
 
-const PHONE_NUMBER = "+91 98765 43210";
+const PHONE_NUMBER = "+91 88102 49661";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -62,7 +62,7 @@ export default function Navbar() {
               About
             </a>
 
-            <a href="#products" onClick={closeMenu}>
+            <a href="/products" onClick={closeMenu}>
               Products
             </a>
 

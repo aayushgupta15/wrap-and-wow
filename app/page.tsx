@@ -4,6 +4,7 @@ import HeroSlider from "./components/HeroSlider";
 import LuxeGifting from "./components/LuxeGifting";
 import LuxeGifting1 from "./components/LuxeGifting_1";
 import FullBanner from "./components/FullBanner";
+import Benefits from "./components/Benefits";
 import Reviews from "./components/Reviews";
 import FAQs from "./components/FAQs";
 import Footer from "./components/Footer";
@@ -26,6 +27,8 @@ export default function Home() {
       <LuxeGifting />
       <LuxeGifting1 />
       <FullBanner />
+      <br />
+      <Benefits />
       <Reviews />
       <FAQs />
       <Footer />
