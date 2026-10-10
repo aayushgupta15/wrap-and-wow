@@ -40,7 +40,7 @@ export default function Footer() {
           <button
             type="button"
             className={styles.contactItem}
-            onClick={() => handleContactClick("phone", "+91 98765 43210")}
+            onClick={() => handleContactClick("phone", "+91 88102 49661")}
           >
             <span className={styles.contactIcon}>
               <svg viewBox="0 0 24 24">
@@ -48,7 +48,7 @@ export default function Footer() {
               </svg>
             </span>
 
-            <span>+91 98765 43210</span>
+            <span>+91 88102 49661</span>
           </button>
 
           {/* EMAIL */}

@@ -5,6 +5,7 @@ import LuxeGifting from "./components/LuxeGifting";
 import LuxeGifting1 from "./components/LuxeGifting_1";
 import FullBanner from "./components/FullBanner";
 import Reviews from "./components/Reviews";
+import FAQs from "./components/FAQs";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 
@@ -26,7 +27,7 @@ export default function Home() {
       <LuxeGifting1 />
       <FullBanner />
       <Reviews />
-
+      <FAQs />
       <Footer />
 
       <WhatsAppButton />

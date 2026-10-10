@@ -66,7 +66,7 @@ export default function Navbar() {
               Products
             </a>
 
-            <a href="#contact" onClick={closeMenu}>
+            <a href="/contact" onClick={closeMenu}>
               Contact
             </a>
           </nav>
