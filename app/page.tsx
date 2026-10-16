@@ -2,6 +2,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import HeroSlider from "./components/HeroSlider";
 import LuxeGifting from "./components/LuxeGifting";
+import Giftingproduct from "./components/Giftingproduct";
+import GiftingBanner from "./components/GiftingBanner";
 import LuxeGifting1 from "./components/LuxeGifting_1";
 import FullBanner from "./components/FullBanner";
 import Benefits from "./components/Benefits";
@@ -21,18 +23,19 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-
       {/* <Hero /> */}
       <HeroSlider />
-      <LuxeGifting />
-      <LuxeGifting1 />
-      <FullBanner />
-      <br />
       <Benefits />
+      <GiftingBanner />
+      <Giftingproduct />
+      {/* <LuxeGifting />
+      <LuxeGifting1 />
+      <FullBanner /> */}
+      <br />
+      {/* <Benefits /> */}
       <Reviews />
       <FAQs />
       <Footer />
-
       <WhatsAppButton />
     </main>
   );
