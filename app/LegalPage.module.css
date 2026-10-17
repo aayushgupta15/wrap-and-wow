@@ -1,0 +1,152 @@
+.page {
+  --cream: #fbf7f2;
+  --pink: #c77b88;
+  --text: #302923;
+  --muted: #746b64;
+
+  background: var(--cream);
+  color: var(--text);
+  min-height: 100vh;
+  padding-bottom: 90px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero {
+  text-align: center;
+  padding: 90px 24px 65px;
+  background: #f5eae5;
+}
+
+.eyebrow {
+  display: block;
+  color: var(--pink);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 500;
+  letter-spacing: -1.8px;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.hero h1 span {
+  color: var(--pink);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.hero > p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.9;
+  max-width: 570px;
+  margin: 22px auto 0;
+}
+
+.content {
+  width: min(850px, calc(100% - 40px));
+  margin: 55px auto 0;
+}
+
+.updated {
+  color: #8a7d73;
+  font-size: 12px;
+  margin-bottom: 35px;
+}
+
+.content section {
+  padding: 25px 0;
+  border-bottom: 1px solid #e8ddd4;
+}
+
+.content section:first-of-type {
+  padding-top: 0;
+}
+
+.content h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0 0 13px;
+}
+
+.content p,
+.content li {
+  color: #6e655e;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.content p {
+  margin: 0 0 12px;
+}
+
+.content p:last-child {
+  margin-bottom: 0;
+}
+
+.content ul {
+  padding-left: 22px;
+  margin: 12px 0;
+}
+
+.content li {
+  padding-left: 4px;
+  margin-bottom: 7px;
+}
+
+.contactLink {
+  display: inline-block;
+  color: var(--pink);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  margin-top: 12px;
+  border-bottom: 1px solid var(--pink);
+  padding-bottom: 5px;
+  transition: opacity 0.2s ease;
+}
+
+.contactLink:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 65px 20px 45px;
+  }
+
+  .hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .hero > p {
+    font-size: 13px;
+  }
+
+  .content {
+    width: calc(100% - 36px);
+    margin-top: 35px;
+  }
+
+  .content section {
+    padding: 22px 0;
+  }
+
+  .content h2 {
+    font-size: 16px;
+  }
+
+  .content p,
+  .content li {
+    font-size: 12px;
+    line-height: 1.9;
+  }
+}

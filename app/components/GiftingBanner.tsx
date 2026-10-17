@@ -8,8 +8,8 @@ export default function GiftingBanner() {
       <div className={styles.banner}>
         <div className={styles.imageWrapper}>
           <Image
-            src="/product_one.png"
-            alt="Premium curated gift hampers by Wrap N Wow"
+            src="/luxe_festive.png"
+            alt="A Royal Affair of Nuts, Chocolates & Indulgence"
             fill
             priority
             sizes="(max-width: 768px) 100vw, 75vw"
@@ -18,16 +18,18 @@ export default function GiftingBanner() {
         </div>
 
         <div className={styles.content}>
-          <p className={styles.eyebrow}>THE ART OF THOUGHTFUL GIFTING</p>
+          <p className={styles.eyebrow}>
+            A Royal Affair of Nuts, Chocolates & Indulgence
+          </p>
 
           <h2>
-            Make every
-            <br className={styles.desktopBreak} /> moment unforgettable.
+            Royal Nut & Choco
+            <br className={styles.desktopBreak} /> Gift Hamper
           </h2>
 
           <p className={styles.description}>
-            Beautifully curated hampers, thoughtful details, and elegant
-            packaging to make your special moments truly memorable.
+            Salted Cashews, Salted Almonds, Dry Fruit & Seed Mix and Premium
+            Chocolates
           </p>
 
           <Link href="/products" className={styles.button}>
@@ -35,7 +37,8 @@ export default function GiftingBanner() {
           </Link>
 
           <p className={styles.note}>
-            Thoughtfully curated. Beautifully wrapped. Always memorable.
+            Choose your chocolate flavours and create a hamper that’s uniquely
+            yours
           </p>
         </div>
       </div>

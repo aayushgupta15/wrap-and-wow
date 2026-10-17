@@ -58,12 +58,17 @@ export default function Navbar() {
           <nav
             className={`${styles.leftNav} ${menuOpen ? styles.mobileOpen : ""}`}
           >
-            <a href="#about" onClick={closeMenu}>
-              About
-            </a>
-
             <a href="/products" onClick={closeMenu}>
               Products
+            </a>
+
+            <a
+              href="https://drive.google.com/file/d/1ihtX5mGFbkYarvLW-93mgFFfW0QPcLxc/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeMenu}
+            >
+              Catalog
             </a>
 
             <a href="/contact" onClick={closeMenu}>

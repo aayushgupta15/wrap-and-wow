@@ -3,7 +3,7 @@
 import { FormEvent, useState } from "react";
 import styles from "./ContactForm.module.css";
 
-const CONTACT_PHONE = "+918810249661";
+const CONTACT_PHONE = "+91 88102 49661";
 const CONTACT_EMAIL = "wrapnwow2026@gmail.com";
 
 function isMobileDevice() {
@@ -254,7 +254,7 @@ export default function ContactForm() {
               disabled={loading}
             >
               {loading ? "Sending..." : "Send Message"}
-              {!loading && <span aria-hidden="true"> ↗</span>}
+              {!loading && <span aria-hidden="true"> </span>}
             </button>
           </form>
         </div>

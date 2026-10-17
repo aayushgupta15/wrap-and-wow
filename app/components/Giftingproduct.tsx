@@ -10,7 +10,7 @@ export default function PromoBanner() {
         {/* Background product image */}
         <div className={styles.imageWrapper}>
           <Image
-            src="/product_one.png"
+            src="/royal.png"
             alt="Beautifully curated premium gift hampers"
             fill
             priority
@@ -30,15 +30,15 @@ export default function PromoBanner() {
           <p className={styles.eyebrow}>SPECIAL GIFTING OFFER</p>
 
           <h2>
-            Thoughtful Gifts.
+            Royal Nut & Choco
             <br />
-            Beautifully Wrapped.
+            Gift Hamper
           </h2>
 
           <p className={styles.description}>
-            Discover premium gift hampers curated for every celebration. Make
-            every occasion memorable with thoughtful gifts and elegant
-            packaging.
+            A Royal Affair of Nuts, Chocolates & Indulgence <br />
+            Salted Cashews, Salted Almonds, Dry Fruit & Seed Mix and Premium
+            Chocolates.
           </p>
 
           <Link href="/products" className={styles.button}>

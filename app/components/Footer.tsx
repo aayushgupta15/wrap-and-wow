@@ -71,7 +71,11 @@ export default function Footer() {
         </div>
         {/* Social Icons */}
         <div className={styles.socials}>
-          <a href="#" aria-label="Instagram" className={styles.social}>
+          <a
+            href="https://www.instagram.com/wrapnwow_gifting"
+            aria-label="Instagram"
+            className={styles.social}
+          >
             <svg viewBox="0 0 24 24">
               <rect x="3" y="3" width="18" height="18" rx="5" />
               <circle cx="12" cy="12" r="4" />
@@ -85,18 +89,18 @@ export default function Footer() {
             </svg>
           </a>
 
-          <a href="#" aria-label="LinkedIn" className={styles.social}>
+          {/* <a href="#" aria-label="LinkedIn" className={styles.social}>
             <svg viewBox="0 0 24 24">
               <path d="M6 8v10" />
               <circle cx="6" cy="5" r="1" fill="currentColor" stroke="none" />
               <path d="M10 18v-6a3 3 0 0 1 6 0v6" />
               <path d="M10 12v6" />
             </svg>
-          </a>
+          </a> */}
 
-          <a href="#" aria-label="X" className={styles.social}>
+          {/* <a href="#" aria-label="X" className={styles.social}>
             <span className={styles.xIcon}>𝕏</span>
-          </a>
+          </a> */}
 
           {/* <a href="#" aria-label="TikTok" className={styles.social}>
             <span className={styles.tiktok}>♪</span>

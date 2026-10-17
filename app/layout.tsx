@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "Wrap & Wow | Premium Gifting",
   description:
     "Thoughtfully curated gift hampers and premium gifting experiences.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
