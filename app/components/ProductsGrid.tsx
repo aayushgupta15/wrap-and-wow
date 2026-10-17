@@ -70,7 +70,7 @@ const products = [
     description:
       "Salted Cashews, Salted Almonds, Dry Fruit & Seed Mix and Premium Chocolates    ",
     price: "₹1275",
-    image: "Royal_nut.png",
+    image: "Royal_Nut.png",
     category: "Premium Gifting",
   },
 ];
