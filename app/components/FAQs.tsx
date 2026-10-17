@@ -54,9 +54,9 @@ export default function FAQs() {
       <div className={styles.container}>
         <header className={styles.header}>
           <div className={styles.headingRow}>
-            <span className={styles.headingIcon} aria-hidden="true">
+            {/* <span className={styles.headingIcon} aria-hidden="true">
               ?
-            </span>
+            </span> */}
             <h2>Before You Ask</h2>
           </div>
 
@@ -111,14 +111,14 @@ export default function FAQs() {
           })}
         </div>
 
-        <div className={styles.bottomNote}>
+        <div className={styles.button}>
           <p>Still have a question?</p>
           <a
             href="https://wa.me/918810249661?text=Hello%20Wrap%20%26%20Wow!%20I%20have%20a%20question%20about%20your%20gifting%20services."
             target="_blank"
             rel="noopener noreferrer"
           >
-            Let’s talk about gifting <span aria-hidden="true">↗</span>
+            Let’s talk about gifting
           </a>
         </div>
       </div>

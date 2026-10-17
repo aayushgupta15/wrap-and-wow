@@ -43,10 +43,7 @@ export default function PromoBanner() {
 
           <Link href="/products" className={styles.button}>
             Shop Collection
-            <span aria-hidden="true">↗</span>
           </Link>
-
-          <p className={styles.note}>Made with love. Wrapped with care.</p>
         </div>
       </div>
     </section>
