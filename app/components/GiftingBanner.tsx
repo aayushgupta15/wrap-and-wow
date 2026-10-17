@@ -19,17 +19,14 @@ export default function GiftingBanner() {
 
         <div className={styles.content}>
           <p className={styles.eyebrow}>
-            A Royal Affair of Nuts, Chocolates & Indulgence
+            A Thoughtfully Curated Celebration of Joy!
           </p>
 
-          <h2>
-            Royal Nut & Choco
-            <br className={styles.desktopBreak} /> Gift Hamper
-          </h2>
+          <h2>The Festive Luxe Box</h2>
 
           <p className={styles.description}>
-            Salted Cashews, Salted Almonds, Dry Fruit & Seed Mix and Premium
-            Chocolates
+            Festive Candle, Chocolates, Salted Cashews, Salted Almonds,
+            Beautiful Coffee Mug and Coffee Sachets
           </p>
 
           <Link href="/products" className={styles.button}>
