@@ -5,7 +5,7 @@ import styles from "./WhatsAppButton.module.css";
 const WHATSAPP_NUMBER = "918810249661";
 
 const MESSAGE =
-  "Hello Wrap & Wow! 👋\n\nI’m interested in your gifting services. I’d like to know more about your products, customization options, and pricing.\n\nThank you!";
+  "Hello Wrap & Wow! 👋\n\n I'm interested in your gifting collections. I'd love to explore your hampers and customised gifting options.\n\nPlease share your catalogue and pricing details.\n\nThank you!";
 
 export default function WhatsAppButton() {
   const handleWhatsApp = () => {

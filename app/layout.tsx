@@ -16,15 +16,22 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Wrap & Wow | Premium Gifting",
+  metadataBase: new URL("https://www.wrapnwow.com"),
+  title: {
+    default: "Premium Gift Hampers & Corporate Gifting | Wrap & Wow",
+    template: "%s | Wrap & Wow", // har page ke title ke end mein brand lag jayega
+  },
   description:
-    "Thoughtfully curated gift hampers and premium gifting experiences.",
-  icons: {
-    icon: "/favicon.ico",
+    "Buy curated gift hampers online: dry fruit, chocolate and corporate gift boxes from ₹850. Custom hampers and bulk festive orders. Delivery in Delhi NCR and Dehradun.",
+  openGraph: {
+    siteName: "Wrap & Wow",
+    type: "website",
+    locale: "en_IN",
+    images: ["/banner_premium.png"], // WhatsApp/Facebook par preview image
   },
-  verification: {
-    google: "GCY3b84A8CIV0Z60x8a9wczO7Vm5eqll_a5-V7Y2W54",
-  },
+  alternates: { canonical: "/" },
+  // google-site-verification tag aapka pehle se hai, usse rehne do:
+  verification: { google: "GCY3b84A8CIV0Z60x8a9wczO7Vm5eqll_a5-V7Y2W54" },
 };
 
 export default function RootLayout({

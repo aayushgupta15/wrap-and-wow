@@ -69,9 +69,27 @@ const products = [
     name: "Royal Nut & Choco Gift Hamper",
     description:
       "Salted Cashews, Salted Almonds, Dry Fruit & Seed Mix and Premium Chocolates    ",
-    price: "₹1275",
+    price: "₹1,275",
     image: "Royal_Nut.png",
     category: "Premium Gifting",
+  },
+  {
+    id: 9,
+    name: "Royal Blush",
+    description:
+      "premium dry fruits, delectable chocolates, festive namkeen, and decorative accents ",
+    price: "₹1,330",
+    image: "Royal_Blush.png",
+    category: "Festive Collection",
+  },
+  {
+    id: 10,
+    name: "Royal Petal Diwali Hamper",
+    description:
+      "a beautifully crafted pink-and-gold floral accent with delectable treats, delicate fairy lights, and sophisticated transparent packaging with gold detailing.",
+    price: "₹699",
+    image: "Royal_Petal.png",
+    category: "Festive Collection",
   },
 ];
 

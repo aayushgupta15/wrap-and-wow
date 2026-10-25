@@ -22,8 +22,8 @@ const reviews = [
     author: "ANANYA SINGH",
   },
   {
-    text: "“The hamper was beautifully curated and every detail felt so thoughtful. It made our celebration truly special.”",
-    author: "PRIYA SHARMA",
+    text: "“I loved how thoughtfully everything was arranged. The hamper felt premium and made my gift extra special. Would definitely choose Wrap & Wow again.”",
+    author: "GAUTAM",
   },
 ];
 
