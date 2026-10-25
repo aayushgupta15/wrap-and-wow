@@ -25,11 +25,7 @@ export default function GiftingCollection() {
       <div className="wnw-collection-header">
         <div className="wnw-collection-title">
           <span className="wnw-eyebrow">THE ART OF THOUGHTFUL GIFTING</span>
-          <h2>
-            LITTLE BOXES.
-            <br />
-            BIG MOMENTS.
-          </h2>
+          <h1>Premium Gift Hampers &amp; Corporate Gifting</h1>
         </div>
 
         <div className="wnw-collection-intro">

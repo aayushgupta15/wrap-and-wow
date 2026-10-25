@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | Wrap & Wow", // har page ke title ke end mein brand lag jayega
   },
   description:
-    "Buy curated gift hampers online: dry fruit, chocolate and corporate gift boxes from ₹850. Custom hampers and bulk festive orders. Delivery in Delhi NCR and Dehradun.",
+    "Curated gift hampers online: dry fruit, chocolate & corporate gift boxes from ₹850. Custom and bulk orders. Delivery in Delhi NCR & Dehradun.",
   openGraph: {
     siteName: "Wrap & Wow",
     type: "website",
