@@ -62,12 +62,7 @@ export default function Navbar() {
               Products
             </a>
 
-            <a
-              href="https://drive.google.com/file/d/1ihtX5mGFbkYarvLW-93mgFFfW0QPcLxc/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={closeMenu}
-            >
+            <a href="/catalog" onClick={closeMenu}>
               Catalog
             </a>
 
