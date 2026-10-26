@@ -1,10 +1,12 @@
+import type { Metadata } from "next";
+import type { CSSProperties } from "react";
 import Navbar from "../components/Navbar";
 import ContactForm from "../components/ContactForm";
 import FAQs from "../components/FAQs";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
 
-export const metadata = {
+export const metadata: Metadata = {
   metadataBase: new URL("https://www.wrapnwow.com"),
   title: "Contact Us | Wrap & Wow Corporate & Festive Gifting",
   description:
@@ -60,7 +62,7 @@ const jsonLd = {
 };
 
 // Screen par nahi dikhta, lekin Google padh leta hai
-const srOnly = {
+const srOnly: CSSProperties = {
   position: "absolute",
   width: "1px",
   height: "1px",
