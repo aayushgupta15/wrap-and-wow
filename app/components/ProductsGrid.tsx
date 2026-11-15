@@ -97,7 +97,7 @@ const products = [
     description:
       "A luxurious assortment of sweet, nutty and crunchy delights, beautifully presented in an elegant embossed gift box. The Regal Indulgence Box brings together delicious treats and premium packaging to make every gifting moment.",
     price: "₹1,299",
-    image: "Regal_platter.png",
+    image: "Regal_Platter1.png",
     category: "Premium Gifting",
   },
   {
