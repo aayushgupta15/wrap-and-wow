@@ -91,6 +91,33 @@ const products = [
     image: "Royal_Petal.png",
     category: "Festive Collection",
   },
+  {
+    id: 11,
+    name: "The Regal Platter",
+    description:
+      "A luxurious assortment of sweet, nutty and crunchy delights, beautifully presented in an elegant embossed gift box. The Regal Indulgence Box brings together delicious treats and premium packaging to make every gifting moment.",
+    price: "₹1,299",
+    image: "Regal_platter.png",
+    category: "Premium Gifting",
+  },
+  {
+    id: 12,
+    name: "The Royale Jardin Box",
+    description:
+      "An exquisite heritage-inspired gift box featuring beautiful palace architecture, peacock motifs, intricate gold embellishments and luxurious turquoise satin interiors.",
+    price: "₹999",
+    image: "Royale_Jardin.png",
+    category: "Festive Collection",
+  },
+  {
+    id: 13,
+    name: "The Royal Shagun Basket",
+    description:
+      "Hershey’s chocolates for a touch of sweetness A beautifully embellished dry fruit potli An elegant diya and candle set to brighten festive moments",
+    price: "₹525",
+    image: "Shagun_Basket.png",
+    category: "Festive Collection",
+  },
 ];
 
 export default function ProductsGrid() {
